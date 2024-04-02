@@ -28,7 +28,7 @@ void main() {
   print('Enter last Number');
   int n = int.parse(stdin.readLineSync()!);
 
-  int counter = 0,totalprime = 0;
+ // int counter = 0,totalprime = 0;
 
 if(m == 0 || m == 1){
   print('0,1 not prime number');
