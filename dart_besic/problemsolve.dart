@@ -15,15 +15,14 @@ void main() {
   displayFruitDetails(fruits);
 }
 
-void displayFruitDetails(List<Map<String, dynamic>> fruits) {
+void displayFruitDetails(fruits) {
   for (var fruit in fruits) {
     print(
         'name:${fruit['name']}, Color:${fruit['Color']}, price :\$${fruit['price']}');
   }
 }
 
-void applyPriceDiscount(
-    List<Map<String, dynamic>> fruits, int discountPercentage) {
+void applyPriceDiscount(fruits, double discountPercentage) {
   for (var fruit in fruits) {
     double originalPrice = fruit['price'];
     double discountPrice = originalPrice * (discountPercentage / 100);
