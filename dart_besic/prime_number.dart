@@ -47,7 +47,7 @@ if(m == 0 || m == 1){
     // }
 
   }
-  print('Total Prime Number of : $totalprime');
+ // print('Total Prime Number of : $totalprime');
 }
 }
 
