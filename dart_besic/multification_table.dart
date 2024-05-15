@@ -1,5 +1,5 @@
 import 'dart:io';
-
+// this is a multification table programming
 void main(){
   print('Enter an Integer Number :');
   String? input = stdin.readLineSync();

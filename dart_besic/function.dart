@@ -1,5 +1,5 @@
 // parameter and return type
-int add(int a, int b) {
+int add( a,  b) {
   int total = a + b;
   return total;
 }
@@ -18,7 +18,7 @@ String greet() {
 
 //Anonymous function
 dynamic cube = (int num) {
-  return cube = num * num * num;
+  return num * num * num;
 };
 
 class ParameterTest {
@@ -52,6 +52,7 @@ class CalculateUseArrowFunc {
 }
 
 void main() {
+
   ParameterTest parameterTest = ParameterTest();
   parameterTest.infoPrint('Mobarok', 'Male');
   parameterTest.defValueParam('Mahi', 'Male');
@@ -59,7 +60,7 @@ void main() {
   parameterTest.namedParam(name: 'Ayesha', gender: 'Female', address: 'dhaka');
   parameterTest.optionalParam('Jhon', 'Male');
   parameterTest.optionalParam('Jhon', 'Male', 'mr:');
-  print(cube(3));
+ print(cube(3));
 
   CalculateUseArrowFunc arrowFunc = CalculateUseArrowFunc();
   int num1 = 30;

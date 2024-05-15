@@ -20,27 +20,22 @@ void main() {
     {'name': 'Jalal', 'age': 26},
   ];
 
-  studentFunction(studentList);
-}
-
-void studentFunction(studentList) {
   for (var student in studentList) {
     print('name: ${student['name']} age : ${student['age']}');
   }
+
+  List<String> myList = ['Mobarak', 'Shakil', 'Tawfiq'];
+  myList.add('Emon');
+  myList.addAll(['Jalal', 'Sakib', 'Ahsanulla']);
+  myList.insert(1, 'Taju Uddin');
+  myList.insertAll(2, ['Nahid', 'Raju', 'Rofiq']);
+  myList.removeLast();
+
+  for (int i = 0; i < myList.length; i++) {
+    print('element $i is ${myList[i]}');
+  }
 }
 
-//  // Growable List
-//   List<String> myList = ['Mobarak', 'Shakil', 'Tawfiq'];
-//   myList.add('Emon');
-//   myList.addAll(['Jalal', 'Sakib', 'Ahsanulla']);
-//   myList.insert(1, 'Taju Uddin');
-//   myList.insertAll(2, ['Nahid', 'Raju', 'Rofiq']);
-//   print(myList.removeLast());
-//
-//   for (int i = 0; i < myList.length; i++) {
-//     print('element $i is ${myList[i]}');
-//   }
-//
 //   print(myList);
 //   print(myList.reversed);
 //   print(myList.first);
